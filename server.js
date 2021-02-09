@@ -5,11 +5,14 @@ const express = require('express'),
       path = require('path'),
       server = require('http').Server(app),
       io = require('socket.io')(server),
+      bodyParser = require('body-parser'),
       PORT = 80 || process.env.PORT,
       PORT2 = 8080,
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname,'public')))
 server.listen(PORT2, () => console.log('\x1b[1m\x1b[35m%s\x1b[0m', `SOCKET IO listening on port`,'\x1b[1m\x1b[33m',` ${PORT2}!`));
 // easy time format way
