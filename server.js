@@ -6,7 +6,7 @@ const express = require('express'),
       server = require('http').createServer(app),
       io = require('socket.io')(server),
       PORT = 3000 || process.env.PORT,
-      PORT2 = 4000
+      PORT2 = 4000,
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
 
