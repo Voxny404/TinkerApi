@@ -6,11 +6,12 @@ const express = require('express'),
       server = require('http').createServer(app),
       io = require('socket.io')(server),
       PORT = 3000 || process.env.PORT,
+      PORT2 = 4000
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
 
 app.use(express.static(path.join(__dirname,'public')))
-
+http.listen(PORT2, () => console.log('\x1b[1m\x1b[35m%s\x1b[0m', `SOCKET IO listening on port`,'\x1b[1m\x1b[33m',` ${PORT2}!`));
 // easy time format way
 let time = moment().format('h:mm a')
 
