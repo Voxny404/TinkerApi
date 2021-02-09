@@ -6,7 +6,7 @@ const express = require('express'),
       server = require('http').Server(app),
       io = require('socket.io')(server),
       bodyParser = require('body-parser'),
-      PORT = 80 || process.env.PORT,
+      PORT = process.env.PORT || 80,
       PORT2 = 8080,
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
