@@ -1,0 +1,16 @@
+{
+  "name": "socketioapi",
+  "version": "1.0.0",
+  "description": "chat api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Voxny404",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.1.1"
+  }
+}
