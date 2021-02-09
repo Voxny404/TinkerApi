@@ -2,9 +2,10 @@
   "name": "socketioapi",
   "version": "1.0.0",
   "description": "chat api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server.js"
   },
   "author": "Voxny404",
   "license": "ISC",
