@@ -5,7 +5,7 @@ const express = require('express'),
       path = require('path'),
       server = require('http').Server(app),
       io = require('socket.io')(server),
-      PORT = 80 || process.env.PORT,
+      PORT = 3000 || process.env.PORT,
       PORT2 = 8080,
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
