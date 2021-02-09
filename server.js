@@ -13,14 +13,17 @@ const express = require('express'),
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static('public'));
+
+// app.set('view engine', 'html');
+// app.set('views', __dirname + '/views');
 server.listen(PORT2, () => console.log('\x1b[1m\x1b[35m%s\x1b[0m', `SOCKET IO listening on port`,'\x1b[1m\x1b[33m',` ${PORT2}!`));
 // easy time format way
 let time = moment().format('h:mm a')
 
 //tells the client it is up and running
 app.get('/status',(req, res) =>{res.end("server is running!!!")})
-
+app.get('/home',(req,res) =>{res.sendFile(__dirname + '/views/home.html');})
 io.on('connection', socket =>{
 
   socket.on('joinRoom',({userName, rooms}) =>{
