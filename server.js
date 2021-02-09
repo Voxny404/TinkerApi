@@ -3,15 +3,15 @@ const express = require('express'),
       app = require('express')(),
       moment = require('moment'),
       path = require('path'),
-      server = require('http').createServer(app),
+      server = require('http').Server(app),
       io = require('socket.io')(server),
-      PORT = 8080 || process.env.PORT,
-
+      PORT = 80 || process.env.PORT,
+      PORT2 = 8080,
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./js/users.js');
 
 app.use(express.static(path.join(__dirname,'public')))
-
+server.listen(PORT2, () => console.log('\x1b[1m\x1b[35m%s\x1b[0m', `SOCKET IO listening on port`,'\x1b[1m\x1b[33m',` ${PORT2}!`));
 // easy time format way
 let time = moment().format('h:mm a')
 
@@ -60,4 +60,4 @@ io.on('connection', socket =>{
   })
 })
 
-server.listen(PORT, () => process.stdout.write(`Server running on port ${PORT} \n`));
+app.listen(PORT, () => process.stdout.write(`Server running on port ${PORT} \n`));
