@@ -1,0 +1,79 @@
+html{
+  background: linear-gradient(89deg, #1f202d, #323347, #0c0c12);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 42s ease infinite;
+    -moz-animation: AnimationName 42s ease infinite;
+    animation: AnimationName 42s ease infinite;
+  margin: 0;
+  overflow-y: hidden;
+
+}
+h1{
+  text-shadow: 0px 3px 1px #393b51;
+  color: #0c0c12;
+}
+h2{
+  text-shadow: 0px 3px 1px #393b51;
+  color: #0c0c12;
+}
+a{
+  color: #999999;
+}
+.all{
+
+}
+.contentTop{
+  text-align: center;
+  max-width: 70vh;
+  margin: auto;
+  width: 50vh;
+  padding: 10px;
+  color: #999999;
+}
+#text-top{
+
+}
+hr{
+  max-width: 90vh;
+
+}
+.download-section{
+  display: block;
+  text-align: center;
+}
+.contentWindows{
+
+}
+.contentWeb{
+
+}
+.contact-section{
+  text-align: center;
+}
+#madeBy{
+  text-decoration: none;
+  opacity: 0.3;
+}
+@media only screen and (max-device-width : 640px){
+  .contentTop{
+    text-align: center;
+
+  }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}

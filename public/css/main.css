@@ -1,0 +1,630 @@
+button
+{
+
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 74px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+html{
+  max-width:100%;
+  max-height: 100%;
+  background: linear-gradient(89deg, #1f202d, #323347, #0c0c12);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 42s ease infinite;
+    -moz-animation: AnimationName 42s ease infinite;
+    animation: AnimationName 42s ease infinite;
+  margin: 0;
+  overflow-y: hidden;
+
+}
+body{
+
+  height:100vh; width: 100%; margin: 0;
+
+}
+div{
+  height: auto;
+  max-height: auto;
+}
+.loader{
+  padding: 270px 0;
+  text-align: center;
+}
+.loadingText{
+  font-size: 30px;
+  text-shadow: 0px 3px 1px #393b51;
+  color: #0c0c12;
+}
+.containsAll
+{
+
+   position: relative;
+   max-width: auto;
+   max-height: auto;
+   height:100vh;
+}
+.offlineBackground{
+
+}
+.contendOFFLINE
+{
+  background-color: #1f202d;
+  box-shadow: 0px 15px 20px  #0c0c12;
+  display: none;
+
+  /* height: auto;
+  max-height: auto; */
+
+  /* position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+}
+.offlineMessage
+{
+
+
+  font-size: 25px;
+  color: #999999;
+}
+/*///////////// Login section ///////////////*/
+.login
+{
+  display: none;
+  /* controlled by script display:none*/
+  /* background-color: #1f202d; */
+  /* box-shadow: 0px 15px 20px  #0c0c12; */
+  height:100vh;
+  max-height: auto;
+
+}
+.loginError
+{
+  color: red;
+  font-weight: bold;
+}
+.formContainerLogin
+{
+  /*position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;*/
+  text-align: center;
+  padding: 150px 0;
+  height: auto;
+  max-height: auto;
+}
+.test{
+  height: auto;
+  max-height: auto;
+  position: absolute;
+  bottom: 1px
+}
+
+.loginHeader
+{
+  height: auto;
+  max-height: auto;
+  text-shadow: 0px 3px 1px #393b51;
+  color: #0c0c12;
+}
+.loginForm
+{
+  height: auto;
+  max-height: auto;
+}
+.input
+{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  height: 50px;
+  border: 2px solid #242533;
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+.input2
+{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  height: 50px;
+  border: 2px solid #242533;
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+.btnInput
+{
+  box-shadow: 0px 15px 20px  #0c0c12;
+  background-color: #323347;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  padding: 15px 74px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.btnInput:hover
+{
+  background-color:  #12131b;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/*///////////// Chat section ///////////////*/
+.ChatBox
+{
+
+   /* controlled by script as display: block*/
+   /* box-shadow: 0px 15px 20px  #0c0c12; */
+   display: none;
+   text-align: center;
+   height: auto;
+   max-height: auto;
+
+
+}
+
+.chatHeaderText
+{
+  text-align: center;
+}
+.theUser
+{
+  /* text-align: center;
+  position: absolute;
+  top: 500px;
+  left: 46px;
+  font-size: 40px; */
+}
+
+.madeBy{
+
+  position: absolute;
+  left:20px;
+  top: 0%;
+  opacity: 0.3;
+}
+.roomName
+{
+  text-shadow: 0px 3px 1px #393b51;
+  color: #0c0c12;
+  word-wrap:break-word;
+  word-break: break-word;
+  max-width: 90%;
+  font-size: 30px;
+  padding: 45px;
+  /* position: absolute;
+  top: 48px;
+  left: 386px; */
+  height: auto;
+  max-height: auto;
+}
+.userName
+{
+   word-wrap:break-word;
+   max-width: 220px;
+
+}
+.userLister
+{
+  /* position: fixed; */
+  position: relative;
+   padding: 25px;
+   max-width: 220px;
+
+
+   /* overflow-y: scroll; height:345px;width: 220px; */
+   scroll-behavior: [ auto | smooth ];
+   overflow-y: scroll; height:255px;
+   border: 3px solid #242533;
+   background-color: #1f202d;
+
+  margin: auto;
+}
+.names{
+  /*user online names*/
+   font-size: 15px;
+}
+.listOfUsers
+{
+  text-shadow: 0px 3px 1px #0c0c12;
+  color: #393b51;
+  text-align: left;
+  float: left;
+  font-size: 6px;
+  /* width:23%; */
+  height: auto;
+  max-height: auto;
+  /* position: absolute;
+  top: 22%;
+  right:  1%; */
+
+
+
+  /*
+
+  max-height:  200px;
+  position: absolute;
+  top: 18.5%;
+  left: 2%;
+  width: 260px;
+  height: 100px;
+  border: 3px solid #73AD21;
+  font-size: 26px;*/
+
+}
+.userList
+{
+
+  height: auto;
+  max-height: auto;
+  font-size: 26px;
+  list-style-type: none;
+}
+.containerSettings
+{
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+
+}
+.roomChanger
+{
+
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-height: auto;
+  /* position: absolute;
+  top: 90px;
+  left: 300px; */
+}
+.roomChangerForm
+{
+  display: block;
+  height: 50%;
+  max-height: auto;
+}
+#roomChangerInput
+{
+  display: none;
+  background-color: #1f202d;
+  font-size: 20px;
+  text-align: center;
+  color: #999999;
+  height: 50px;
+  border: 2px solid #242533;
+  border-radius: 4px;
+}
+
+#userDisplay
+{
+ text-shadow: 0px 3px 1px #0c0c12;
+ color: #393b51;
+}
+.list
+{
+  height: auto;
+  max-height: auto;
+  float: left;
+  padding: 20px ;
+
+}
+.chat-form-container
+{
+
+  /* background-color: #1f202d /*type fild filler*/
+
+
+}
+.imageChat{
+  border: 0;
+
+  max-width:600px;
+  max-height: 600px;
+}
+.messageBoxControler
+{
+  max-width:100%;
+  max-height: 100%;
+}
+.chat-from-container{
+  height: auto;
+}
+.chat-messages
+{
+  position: relative;
+  padding: 10px;
+
+  max-height: auto;
+  overflow-y: scroll; height:86vh;
+  scroll-behavior: [ auto | smooth ];
+}
+.messageContainer
+{
+  display: flex; /*added*/
+  flex-direction: column; /*added*/
+  position: absolute;
+  /*messages will be added here*/
+  text-align: left;
+  bottom: 0;
+  white-space: pre-line;
+  /* height: auto; */
+  word-wrap:break-word;
+  word-break: break-word;
+
+  margin: auto;
+  /* background-color: #1f202d; /*chat Color*/
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  /* max-width: 68%; */
+}
+.message
+{
+  /* color: #999999;
+  position: relative; */
+  /* font-size: calc(1vw + 1vh + 2vmin); */
+  word-wrap:break-word;
+  word-break: break-word;
+  /* left: 10px; */
+  max-width: 95%;
+
+  /* word-wrap:break-word; */
+  height: auto;
+  max-height: auto;
+}
+.chat-form
+{
+  height: auto;
+  max-height: auto;
+
+}
+
+.textBar
+{
+  height: auto;
+  max-height: auto;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+}
+.testClass{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  width:100%;
+  margin: auto;
+}
+.msg
+{
+  color: #999999;
+  resize: none;
+  font-size: 16px;
+
+  padding: 3px;
+  outline: none;
+  background-color: #323347; /*textarea color*/
+  width: 100%;
+  height: 4vh;
+  border: 0 none white;
+  border-radius: 4px;
+  text-indent:2px;
+  box-shadow: 0px 15px 20px  #15161f;
+  /* text-shadow: 0px 8px 0px #1f202d; */
+
+}
+textarea::placeholder {
+  color: #6f707e;
+  opacity: 0.5;
+}
+.btnMsg
+{
+  display: flex;
+  align-items: center;
+
+  /* position: fixed;
+  right: 50px; */
+  background-color: #323347; /* button color type fild*/
+  border: black;
+  color: white;
+  padding: 15px 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+   border: 2px solid #1f202d;
+  /* box-shadow: 0px 8px 0px #1f202d; */
+  box-shadow: 5px 15px 20px  #15161f;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  height: 5vh
+
+}
+.meta
+{
+  /* font-size: calc(2vw + 2vh + 1vmin); */
+  /*msg header*/
+}
+.name
+{
+  color: white;
+}
+.time
+{
+  color: #666666;
+  opacity: 0.4;
+  font-size: 13px;
+  text-shadow: 0px 3px 1px #0c0c12;
+  /*msg header time*/
+}
+.text
+{
+
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    color: #999999;
+
+    /* font-size: calc(1vw + 1vh + 2vmin); */
+    word-wrap:break-word;
+    word-break: break-word;
+
+    /* word-wrap:break-word; */
+  /* msg conntent*/
+}
+
+/*side scroller ---------------------------*/
+::-webkit-scrollbar {
+  height: 4px;
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23272a;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #141822;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #141822;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #323347; /*settings color*/
+  position: relative;
+  box-shadow: 0px 15px 20px  #0c0c12;
+  /* width: 100%; */
+  height: auto;
+  max-height: auto;
+    z-index: +1;
+}
+
+.topnav #myLinks {
+  display: none;
+
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+
+}
+
+.topnav a.icon {
+  box-shadow: -1px -1px 1px #000;
+  /* background: white; */
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 0;
+  top: 0;
+}
+.topnav a.icon:before{
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  left: 9px;
+  width: 2em;
+  height: 0.20em;
+  border-top: 0.875em double #000;
+  border-bottom: 0.325em solid #000;
+
+}
+.topnav a.icon:hover {
+  /* background-color: #ddd; */
+  background-color:  #1f202d;
+  cursor: pointer;
+
+
+}
+.topnav a.icon:focus{
+  /* transform: rotate(-10deg); */
+
+}
+.topnav a.icon:active{
+  /* transform: rotate(-90deg); */
+
+  background-color: gray
+}
+.active {
+  background-color: #323347; /*nav bar top color*/
+
+  /* color: white; */
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
