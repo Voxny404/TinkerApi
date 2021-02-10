@@ -2,8 +2,8 @@
 const express = require('express'),
       app = require('express')(),
       path = require('path'),
-      server = require('https').Server(app), //change to https
-      io = require('socket.io')(server,{cors:{origin:"https://apitink.herokuapp.com/",methods: ["GET", "POST"]}}),
+      server = require('http').Server(app), //change to https
+      io = require('socket.io')(server,{cors:{origin:"http://apitink.herokuapp.com/",methods: ["GET", "POST"]}}),
       bodyParser = require('body-parser'),
       PORT = 4000,
       PORT2 = process.env.PORT || 3000;

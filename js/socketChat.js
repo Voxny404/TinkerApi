@@ -1,6 +1,6 @@
 const express = require('express'),
       app = express(),
-      server = require('https').Server(app), //change to https
+      server = require('http').Server(app), //change to https
       io = require('socket.io')(server),
       //stores user temporarly
       {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./users.js'),
