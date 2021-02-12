@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Tinker</title>
   </head>
   <body>
 
+    <!--loading and offline area -->
     <div class="loader" id="loader">
       <div class="lds-dual-ring"></div>
       <br>
@@ -18,9 +18,9 @@
         <p class="offlineMessage" id="offlineMessage"></p>
       </div>
     </div>
+    <!-- end of loading and offline -->
 
     <div class="containsAll" id="containsAll">
-
 
         <!--login area -->
       <div id="login" class="login">
@@ -39,108 +39,80 @@
         </div>
       </div>
       <!--end of chat -->
-      <!--chat area -->
 
+      <!--chat area -->
       <div id="ChatBox" class="ChatBox">
 
-
-              <!-- Top Navigation Menu -->
+        <!-- Top Navigation Menu -->
         <div class="topnav">
-
+          <!-- username display -->
           <a id="theActualUser"  class="active">Chat</a>
-
           <div id="myLinks" class="containerSettings">
-
-
-
+            <!-- list of users container -->
             <div class="list">
-
               <br>
               <a class="madeBy" href="https://github.com/Voxny404"target="_blank" >Made by Voxny404</a>
               <div class="userLister">
-
                 <label id="userDisplay">USERS ONLINE</label><br>
-
                 <div id="usersName" class="listOfUsers"></div>
               </div>
             </div>
+            <!-- button room changer and room display -->
             <div class="roomChanger">
+              <p id="roomName" class="roomName"></p>
               <form id="roomChangerForm"class="roomChangerForm">
-                <p id="roomName" class="roomName"></p>
                 <button class"btnRoomChanger" type="submit" name="button">Change room</button>
               </form>
             </div>
-
-
           </div>
+          <!-- Menu button -->
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
 
 
-
+        <!-- message content -->
         <div class="messageBoxControler">
           <div id="chatBox1" class="chat-form-container">
             <div class="messageContainer" id="messageContainer">
               <div id="chat-messages" class="chat-messages" >
-
-
-
               </div>
             </div>
-            <div class="testClass">
+            <!-- TextArea message -->
+            <div class="textClass">
               <form id="chat-form" class="chat-form" >
                 <div class="textBar" >
                   <textarea id='msg' class="msg" type="text" name="" value="" rows="10" cols="100"  placeholder="Enter Message" required autocomplete="off"></textarea>
                   <button class="btnMsg" type="submit" name="button">Send</button>
                 </div>
-
               </form>
             </div>
-
+            <!-- end of TextArea message -->
           </div>
-
         </div>
-
-
       </div>
+      <!-- message Container -->
 
       <audio id="notifier"src="sounds/consoleSound.ogg">
-
       </audio>
       <!-- end of chat -->
     </div>
 
-
-
-    <script type="text/javascript" src="res/socket.io.js"></script>
+    <script src="res/socket.io.js"></script>
     <script type="text/javascript" src="js/loader.js"></script>
-
+    <script type="text/javascript" src="js/onlineCheck.js"></script>
     <script type="text/javascript" src="js/join.js"></script>
-    <script type="text/javascript" src="js/loginEventListener.js"></script>
-    <script type="text/javascript" src="js/socks.js"></script>
-    <script type="text/javascript" src="js/socksMessage.js"></script>
-    <script type="text/javascript" src="js/outputRoomName.js"></script>
-    <script type="text/javascript" src="js/outputUsers.js"></script>
+    <script type="text/javascript" src="js/eventListeners/loginEventListener.js"></script>
+    <script type="text/javascript" src="js/socket/socks.js"></script>
+    <script type="text/javascript" src="js/socket/socksMessage.js"></script>
+    <script type="text/javascript" src="js/eventListeners/hyperlinkListener.js"></script>
+    <script type="text/javascript" src="js/eventListeners/eventListeners.js"></script>
+    <script type="text/javascript" src="js/socket/socketsOnDisconnect.js"></script>
+    <script type="text/javascript" src="js/socket/socketsOnMessage.js"></script>
+    <script type="text/javascript" src="js/displayFunction.js"></script>
+    <script type="text/javascript" src="js/userManager.js"></script>
 
-    <script type="text/javascript" src="js/eventListeners.js"></script>
-    <script type="text/javascript" src="js/socketsOnDisconnect.js"></script>
-    <script type="text/javascript" src="js/socketsOnMessage.js"></script>
 
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks"),
-            chatBox1 = document.getElementById('chatBox1');
-        if (x.style.display === "block") {
-          x.style.display = "none";
-
-        } else {
-          x.style.display = "block";
-
-        }
-      }
-    </script>
   </body>
 </html>
